@@ -14,7 +14,6 @@ type State = "idle" | "loading" | "success";
 export const Contact = () => {
   const [state, setState] = useState<State>("idle");
 
-  // ✅ UPDATED FUNCTION (REAL BACKEND CONNECTION)
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setState("loading");
@@ -29,13 +28,16 @@ export const Contact = () => {
     };
 
     try {
-      const res = await fetch("http://localhost:5000/send-mail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+      const res = await fetch(
+        "https://portfolio-backend-fxd4.onrender.com/send-mail",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
 
       const result = await res.json();
 
@@ -73,11 +75,13 @@ export const Contact = () => {
               Contact
             </p>
           </Reveal>
+
           <Reveal delay={0.05}>
             <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight md:text-6xl">
               Let's build <span className="text-gradient">something great.</span>
             </h2>
           </Reveal>
+
           <Reveal delay={0.1}>
             <p className="mx-auto mt-5 max-w-xl text-muted-foreground md:text-lg">
               Have an opportunity or idea? I’d love to hear from you.
