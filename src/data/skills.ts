@@ -13,7 +13,7 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: "React.js", level: 80 },
       
-      { name: "Tailwind CSS", level: 85 },
+      
       { name: "HTML5", level: 90 },
       { name: "CSS3", level: 90 },
     ],
@@ -23,7 +23,7 @@ export const skillCategories: SkillCategory[] = [
     icon: Server,
     skills: [
       { name: "Node.js", level: 75 },
-      { name: "Express.js", level: 70 },
+      { name: "Spring Boot", level: 70 },
       { name: "REST APIs", level: 80 },
     ],
   },
@@ -34,7 +34,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "Python", level: 70 },
       { name: "Java", level: 90 },
       { name: "JavaScript", level: 85 },
-      { name: "TypeScript", level: 70 },
+      
     ],
   },
   {
