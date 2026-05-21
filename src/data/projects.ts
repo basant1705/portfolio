@@ -12,19 +12,19 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Disease Prediction Tool",
-    tagline: "AI-assisted symptom-based diagnosis",
+    title: "AI Interview Analyzer",
+    tagline: "AI-driven insights for your career growth.",
     description:
-      "A machine learning powered web app that predicts likely diseases from a set of user-reported symptoms. Trained on a curated medical dataset with a clean dashboard to display predictions, confidence scores, and recommended next steps.",
-    tech: ["Python", "Scikit-learn", "Flask", "React", "Tailwind CSS"],
+      "An AI coach that records mock interviews and gives instant feedback on your answers, pacing, and body language to help you land the job.",
+    tech: ["Java", "Frontend",  "React", "Tailwind CSS"],
     github: "https://github.com/basantkumar",
     demo: "#",
     accent: "purple",
     image: "/projects/project1.png",
     highlights: [
-      "Symptom → disease classifier",
-      "Confidence scoring & top-k predictions",
-      "Clean, responsive clinical-style UI",
+      "Speech & text → competency classifier",
+      "Confidence scoring & response-fit predictions",
+      "Clean, responsive dashboard-style UI",
     ],
   },
   {
